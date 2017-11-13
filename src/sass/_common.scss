@@ -14,8 +14,8 @@ html {
 
 body {
   background-color: #fff;
-  color: #333;
-  font-family: 'PoiretOneRegular', $font-stack-helvetica;
+  color: #222;
+  font-family: 'aavanteintbook', $font-stack-helvetica;
   @include font-size(1.6);
   font-smoothing: antialiased;
   font-kerning: normal;
@@ -80,7 +80,7 @@ p {
 .btn {
   font-size: 22px;
   line-height: 54px;
-  font-family: 'ComfortaaRegular', $font-stack-helvetica;
+//  font-family: 'ComfortaaRegular', $font-stack-helvetica;
   width: 210px;
   height: 56px;
   text-align: center;
@@ -93,5 +93,274 @@ p {
   &:focus,
   &:active {
     
+  }
+}
+
+/* header */
+
+header{
+  background-color: #42264e;
+  padding: 9px 0 6px;
+  text-align: right;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  @include clearfix;
+  .logo{
+    display: inline-block;
+    margin-left: 6.666%;
+    float: left;
+  }
+  .info_block{
+    color: #ddd;
+    font-size: 0;
+    margin-right: 6.519%;
+    padding: 3px 0;
+  }
+  .info_item{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    margin-left: 3.566%;
+    &:first-child{
+      margin-right: 1.664%;
+    }
+    img{
+      margin-right: 9px;
+      position: relative;
+      top: 3px;
+    }
+  }
+}
+
+/* main_menu */
+
+.main_nav{
+  
+}
+
+.burger_menu{
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.025em;
+  position: fixed;
+  top: 100px;
+  left: 6.519%;
+  z-index: 1;
+  transition: color .7s ease;
+  .burger{
+    width: 36px;
+    line-height: 0;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 9px;
+    margin-top: -3px;
+    span{
+      display: inline-block;
+      width: 36px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #6f8b01;
+      margin: 2.5px 0;
+      transition: background-color .7s ease;
+    }
+  }
+  &.other{
+    color: #222;
+    .burger span{
+      background-color: #3f254b; 
+    }
+  }
+}
+
+/* main */
+
+.fp-section.fp-table .fp-tableCell{
+  padding-top: 49px;
+}
+
+.title{
+  font-size: 100px;
+  color: #42264e;
+  text-shadow: 4px 0px 0px rgba(66, 38, 78, 0.3);
+  text-transform: uppercase;
+}
+
+.subtitle{
+  font-size: 29px;
+  color: #42264e;
+  font-family: 'robotobold', $font-stack-helvetica;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section_franchise{
+  background: url('../img/shop.jpg') center no-repeat;
+  background-size: cover;
+  text-align: center;
+  .slogan{
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .open{
+    font-size: 50px;
+    line-height: 80px;
+  }
+  .franchise{
+    font-size: 120px;
+    line-height: 130px;
+    text-shadow: 4px 0px 0px rgba(255, 255, 255, 0.3);
+  }
+  .serge{
+    font-size: 70px;
+    line-height: 90px;
+  }
+  .anchor{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #bdb6c0;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 5.777%;
+    &:after{
+      content: '';
+      position: absolute;
+      border-top: 8px solid #bdb6c0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: 24px;
+      left: 22px;
+    }
+  }
+}
+
+.section_advantages{
+  position: relative;
+  padding-left: 28.741%;
+  font-size: 0;
+  .title{
+    padding-bottom: 6px;
+  }
+  .subtitle{
+    padding-bottom: 2.629%;
+  }
+  .bg_section{
+    width: 28.741%;
+    position: absolute;
+    top: 122px;
+    left: 0;
+    bottom: 0;
+    background: url('../img/bg/advantages_bg.png') right 30px bottom no-repeat;
+    background-size: auto 100%;
+  }
+  .advantage_item{
+    width: 33.333%;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 6.2%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+  }
+  .img{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  img{
+    width: 28.84%;
+  }
+  .caption{
+    font-size: 16px;
+    color: #222;
+  }
+}
+
+.section_testimonials{
+  position: relative;
+  padding-left: 28.741%;
+  padding-right: 6.519%;
+  .bg_section{
+    width: 28.741%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    background: url('../img/bg/testimonials_bg.png') left bottom no-repeat;
+    background-size: auto 100%;
+  }
+}
+
+.testimonials_slider{
+  margin: 0 -15px;
+  padding-top: 22px;
+  .item{
+    padding: 15px;
+    width: 300px;
+  }
+  .item_inner{
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px 0px rgba(34, 34, 34, 0.3);
+    padding: 48px 20px 20px;
+    min-height: 280px;
+  }
+  .img{
+    width: 60px;
+    height: 60px;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 18px;
+    margin-bottom: 18px;
+  }
+  .name{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+  }
+  .state{
+    color: #777;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+  }
+  .text{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+    clear: both;
+  }
+  .slick-dots li button:before{
+    display: none;
+  }
+  .slick-dots{
+    text-align: left;
+    padding: 0 15px;
+    li{
+      width: 10px;
+      height: 10px;
+      margin: 0 20px 0 0;
+      button{
+        background-color: #42264e;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        opacity: .3;
+        transition: opacity .3s ease;
+      }
+      &.slick-active,
+      &:hover,
+      &:active,
+      &:focus{
+        button{
+          opacity: 1;
+        }
+      }
+    }
   }
 }
