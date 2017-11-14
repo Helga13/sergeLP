@@ -10,22 +10,33 @@
   At the bottom of this section, we provide information about the spritesheet itself
   $spritesheet: width height image $spritesheet-sprites
   */
-$doc-red-name: 'doc-red'
-$doc-red-x: 0px
-$doc-red-y: 0px
-$doc-red-offset-x: 0px
-$doc-red-offset-y: 0px
-$doc-red-width: 23px
-$doc-red-height: 28px
-$doc-red-total-width: 23px
-$doc-red-total-height: 28px
-$doc-red-image: 'sprite.png'
-$doc-red: 0px 0px 0px 0px 23px 28px 23px 28px 'sprite.png' 'doc-red'
-$spritesheet-width: 23px
-$spritesheet-height: 28px
+$icom_phone-name: 'icom_phone'
+$icom_phone-x: 0px
+$icom_phone-y: 0px
+$icom_phone-offset-x: 0px
+$icom_phone-offset-y: 0px
+$icom_phone-width: 16px
+$icom_phone-height: 16px
+$icom_phone-total-width: 32px
+$icom_phone-total-height: 16px
+$icom_phone-image: 'sprite.png'
+$icom_phone: 0px 0px 0px 0px 16px 16px 32px 16px 'sprite.png' 'icom_phone'
+$icon_mail-name: 'icon_mail'
+$icon_mail-x: 16px
+$icon_mail-y: 0px
+$icon_mail-offset-x: -16px
+$icon_mail-offset-y: 0px
+$icon_mail-width: 16px
+$icon_mail-height: 14px
+$icon_mail-total-width: 32px
+$icon_mail-total-height: 16px
+$icon_mail-image: 'sprite.png'
+$icon_mail: 16px 0px -16px 0px 16px 14px 32px 16px 'sprite.png' 'icon_mail'
+$spritesheet-width: 32px
+$spritesheet-height: 16px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $doc-red
-$spritesheet: 23px 28px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $icom_phone $icon_mail
+$spritesheet: 32px 16px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables

@@ -3,5 +3,7 @@
 //= lib/jquery.easings.min.js
 //= lib/jquery.fullpage.min.js
 //= lib/slick.min.js
+//= lib/swiper.min.js
+
 
 //= app.js

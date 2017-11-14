@@ -4,6 +4,8 @@ $(document).ready(function () {
   $('#fullpage').fullpage({
     scrollHorizontally: false
     , fixedElements: 'header'
+    , scrollBar: true
+//    ,verticalCentered: false
     , onLeave: function (index, nextIndex) {
         if (nextIndex == 1) {
           $('.burger_menu').removeClass('other');
@@ -27,6 +29,21 @@ $(document).ready(function () {
     , autoplay: true
     , autoplaySpeed: 8000
     , variableWidth: true
+  });
+  
+//   steps_slider
+  
+  var swiper = new Swiper('.swiper-container', {
+//    direction: 'vertical',
+    slidesPerView: 1,
+    mousewheel: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
+    },
   });
   
 })
