@@ -11,32 +11,65 @@
   $spritesheet: width height image $spritesheet-sprites
   */
 $icom_phone-name: 'icom_phone'
-$icom_phone-x: 0px
-$icom_phone-y: 0px
-$icom_phone-offset-x: 0px
-$icom_phone-offset-y: 0px
+$icom_phone-x: 57px
+$icom_phone-y: 28px
+$icom_phone-offset-x: -57px
+$icom_phone-offset-y: -28px
 $icom_phone-width: 16px
 $icom_phone-height: 16px
-$icom_phone-total-width: 32px
-$icom_phone-total-height: 16px
+$icom_phone-total-width: 85px
+$icom_phone-total-height: 47px
 $icom_phone-image: 'sprite.png'
-$icom_phone: 0px 0px 0px 0px 16px 16px 32px 16px 'sprite.png' 'icom_phone'
+$icom_phone: 57px 28px -57px -28px 16px 16px 85px 47px 'sprite.png' 'icom_phone'
+$icon_close-white-name: 'icon_close-white'
+$icon_close-white-x: 29px
+$icon_close-white-y: 0px
+$icon_close-white-offset-x: -29px
+$icon_close-white-offset-y: 0px
+$icon_close-white-width: 28px
+$icon_close-white-height: 28px
+$icon_close-white-total-width: 85px
+$icon_close-white-total-height: 47px
+$icon_close-white-image: 'sprite.png'
+$icon_close-white: 29px 0px -29px 0px 28px 28px 85px 47px 'sprite.png' 'icon_close-white'
+$icon_close-name: 'icon_close'
+$icon_close-x: 57px
+$icon_close-y: 0px
+$icon_close-offset-x: -57px
+$icon_close-offset-y: 0px
+$icon_close-width: 28px
+$icon_close-height: 28px
+$icon_close-total-width: 85px
+$icon_close-total-height: 47px
+$icon_close-image: 'sprite.png'
+$icon_close: 57px 0px -57px 0px 28px 28px 85px 47px 'sprite.png' 'icon_close'
 $icon_mail-name: 'icon_mail'
-$icon_mail-x: 16px
-$icon_mail-y: 0px
-$icon_mail-offset-x: -16px
-$icon_mail-offset-y: 0px
+$icon_mail-x: 29px
+$icon_mail-y: 28px
+$icon_mail-offset-x: -29px
+$icon_mail-offset-y: -28px
 $icon_mail-width: 16px
 $icon_mail-height: 14px
-$icon_mail-total-width: 32px
-$icon_mail-total-height: 16px
+$icon_mail-total-width: 85px
+$icon_mail-total-height: 47px
 $icon_mail-image: 'sprite.png'
-$icon_mail: 16px 0px -16px 0px 16px 14px 32px 16px 'sprite.png' 'icon_mail'
-$spritesheet-width: 32px
-$spritesheet-height: 16px
+$icon_mail: 29px 28px -29px -28px 16px 14px 85px 47px 'sprite.png' 'icon_mail'
+$icon_right-name: 'icon_right'
+$icon_right-x: 0px
+$icon_right-y: 0px
+$icon_right-offset-x: 0px
+$icon_right-offset-y: 0px
+$icon_right-width: 29px
+$icon_right-height: 47px
+$icon_right-total-width: 85px
+$icon_right-total-height: 47px
+$icon_right-image: 'sprite.png'
+$icon_right: 0px 0px 0px 0px 29px 47px 85px 47px 'sprite.png' 'icon_right'
+$spritesheet-width: 85px
+$spritesheet-height: 47px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $icom_phone $icon_mail
-$spritesheet: 32px 16px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $icom_phone $icon_close-white $icon_close $icon_mail $icon_right
+$spritesheet: 85px 47px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables

@@ -30,6 +30,19 @@
     </div>
     Информация
   </a>
+  <div class="popup_nav">
+    <div class="popup_content">
+      <a href="#" class="popup_close"><img src="img/icons/icon_close-white.png" alt=""></a>
+      <div class="title">Информация</div>
+      <ul>
+        <li><a href="#" class="to_advantages">Преимущества</a></li>
+        <li><a href="#" class="to_testimonials">Отзывы</a></li>
+        <li><a href="#" class="to_steps">Этапы создания</a></li>
+        <li><a href="#" class="to_team">Команда</a></li>
+        <li><a href="#" class="to_form">Анкета</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <div id="fullpage">
@@ -80,7 +93,7 @@
             <div class="img"><img src="img/testimonials/photo1.jpg" alt=""></div>
             <div class="name">Пивненко Николай</div>
             <div class="state">Владелец франшизы в Гродно с 2002 г.</div>
-            <div class="text">Покупая франшизу «Serge» мы были уверены в том, что все будет развиваться успешно и бизнес будет расти.</div>
+            <div class="text">Профессионализм, оперативность, отзывчивость - вот отличительные черты сотрудников компании SERGE! Всем спасибо за помощь в открытии магазина! Процветания, новых свершений, новых побед!!!</div>
           </div>
 	    </div>
 	    <div class="item">
@@ -132,12 +145,12 @@
                 <li>Рекомендуемая стартовая закупка товара при открытии магазина составляет 10 000 – 12 000 рос. рублей/кв.м (с учетом скидки)</li>
                 <li>Срок открытия магазина 1 месяц</li>
               </ul>
-              <a href="#" class="link">Вся информация</a>
+              <a href="#" class="link js-popup" data-id="popupInfo">Вся информация</a>
             </div>
             <div class="swiper-slide">
               <div class="slide_heading">2. Заполните анкету</div>
               <p>Заполните простую анкету на покупку франшизы, и наши менеджеры свяжутся с вами в ближайшее время. Уточнить информацию можно по номерам <a href="tel:+375291761023" class="link">+375 (29) 176-10-23</a> и <a href="tel:+375291761023" class="link">+375 (29) 176-10-23</a>, а также по электронной почте <a href="mailto:info@serge.by" class="link">info@serge.by</a></p>
-              <a href="#" class="btn">Заполнить анкету</a>
+              <a href="#" class="btn anchor_application">Заполнить анкету</a>
             </div>
             <div class="swiper-slide">
               <div class="slide_heading">3. Получите оценку помещения</div>
@@ -173,31 +186,134 @@
               </table>
               <div class="info_block">
                 <p>Сумма расходов может отличаться в зависисмости от размера помещения. Рекомендуемая площадь: 30-50 кв.м</p>
-                <a href="#" class="btn">Запросить расчет</a>
+                <a href="#" class="btn js-popup" data-id="popupForm">Запросить расчет</a>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="slide_heading">1. Узнайте больше о франшизе</div>
+              <div class="slide_heading">4. Получите бизнес-модель</div>
               <ul>
                 <li>Минимальные риски за счет использования провереной модели ведения бизнеса.</li>
                 <li>Минимальные затраты на рекламу, поскольку бренд SERGE уже узнаваем покупателями.</li>
                 <li>Поддержка развития с помощью обучения персонала и регулярных консультаций по ведению бизнеса.</li>
               </ul>
-              <a href="#" class="btn">Задать вопрос</a>
+              <a href="#" class="btn js-popup question_btn" data-id="popupForm">Задать вопрос</a>
             </div>
             <div class="swiper-slide">
               <div class="slide_heading">5. Действуйте!</div>
               <p>Для начала сотрудничества необходимо оставить заявку.</p>
-              <a href="#" class="btn">Оставить заявку</a>
+              <a href="#" class="btn js-popup application_btn" data-id="popupForm">Оставить заявку</a>
             </div>
         </div>
 <!--         Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
 	</div>
+	<div class="section section_team">
+	  <div class="bg_section"></div>
+	  <div class="title">Команда</div>
+	  <div class="subtitle">франчайзинга</div>
+	  <div class="item">
+	    <div class="img"><img src="img/team/img1.jpg" alt=""></div>
+	    <div class="name">Бровко Маргорита</div>
+	    <div class="state">Руководитель</div>
+	    <div class="mail"><a href="mailto:margo@franchise_serge.by" class="link">margo@franchise_serge.by</a></div>
+	  </div>
+	  <div class="item">
+	    <div class="img"><img src="img/team/img2.jpg" alt=""></div>
+	    <div class="name">Строгая Елизавета</div>
+	    <div class="state">Координатор</div>
+	    <div class="mail"><a href="mailto:strogiy@franchise_serge.by" class="link">strogiy@franchise_serge.by</a></div>
+	  </div>
+	  <div class="item">
+	    <div class="img"><img src="img/team/img3.jpg" alt=""></div>
+	    <div class="name">Добрый Генадий</div>
+	    <div class="state">Помощник координатора</div>
+	    <div class="mail"><a href="mailto:gena@franchise_serge.by" class="link">gena@franchise_serge.by</a></div>
+	  </div>
+	</div>
+	<div class="section section_form">
+	  <div class="bg_section"></div>
+	  <div class="title">Анкета</div>
+	  <div class="subtitle">для оформления франшизы</div>
+	  <form action="/">
+	    <div class="field">
+	      <label for="name">Имя</label>
+	      <input type="text" id="name">
+	    </div>
+	    <div class="field">
+	      <label for="country">Страна</label>
+	      <select name="country" id="country" class="js-select">
+	        <option value="">Беларусь</option>
+	        <option value="">Россия</option>
+	        <option value="">Украина</option>
+	      </select>
+	    </div>
+	    <div class="field">
+	      <label for="phone">Телефон</label>
+	      <input type="tel" id="phone">
+	    </div>
+	    <div class="field">
+	      <label for="mail">Электронная почта</label>
+	      <input type="email" id="mail">
+	    </div>
+	    <button type="submit" class="btn">Отправить анкету</button>
+	  </form>
+	</div>
 </div>
 
+<!--popup-->
 
+<div class="overlay popup text" id="popupInfo">
+  <div class="popup_content">
+	<a href="#" class="popup_close"><img src="img/icons/icon_close.png" alt=""></a>
+    <div class="content">
+      <div class="subtitle">Подробнее о франшизе</div>
+      <p>SERGE - производитель нижнего белья и верхнего трикотажа из натуральных полотен для женщин и мужчин. Мы предлагаем нашим покупателям натуральную, качественную и красивую продукцию.</p>
+      <p>Философией нашей компании является исключительное отношение к человеческому телу, именно поэтому мы уделяем особое внимание разработке моделей и выбору полотен для нашей продукции.</p>
+      <p>Мы используем только высококачественные материалы, которые в сочетании с идеями дизайнеров превращаются в стильные и комфортные модели.</p>
+      <p>Имея собственную дизайн-студию, мы подходим к разработке каждого изделия индивидуально, учитывая все особенности и детали, и создаем конструктивное белье и одежду, комфортные в носке и почти не ощутимые на теле в течение всего дня.</p>
+      <p>Продукция SERGE неоднократно побеждала в международном конкурсе «Выбор года» в номинации «Бельевой трикотаж №1 в Беларуси».</p>
+      <p>Производство компании оснащено современным высокотехнологичным оборудованием от ведущих мировых производителей.</p>
+      <p>На сегодняшний день у компании более 200 торговых точек в семи странах мира.</p>
+    </div>
+	</div>
+</div>
+
+<div class="overlay popup form" id="popupForm">
+  <div class="popup_content">
+	<a href="#" class="popup_close"><img src="img/icons/icon_close-white.png" alt=""></a>
+    <div class="subtitle">Оформление запроса на расчет стоимости</div>
+    <div class="content">
+      <form action="/">
+	    <div class="field">
+	      <label for="name">Имя</label>
+	      <input type="text" id="name">
+	    </div>
+	    <div class="field">
+	      <label for="country">Страна</label>
+	      <select name="country" id="country" class="js-select">
+	        <option value="">Беларусь</option>
+	        <option value="">Россия</option>
+	        <option value="">Украина</option>
+	      </select>
+	    </div>
+	    <div class="field">
+	      <label for="phone">Телефон</label>
+	      <input type="tel" id="phone">
+	    </div>
+	    <div class="field">
+	      <label for="mail">Электронная почта</label>
+	      <input type="email" id="mail">
+	    </div>
+	    <div class="field full_width">
+	      <label for="text">Электронная почта</label>
+	      <textarea name="" id="text"></textarea>
+	    </div>
+	    <button type="submit" class="btn">Отправить Запрос</button>
+	  </form>
+    </div>
+	</div>
+</div>
 <script src="js/common.js"></script>
 </body>
 </html>
