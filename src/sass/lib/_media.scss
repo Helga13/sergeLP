@@ -1,14 +1,20 @@
-@media only screen and (max-width : 1600px) {
-
+@media only screen and (max-width : 1349px) {
+  
+  .section_testimonials .bg_section{
+    background-size: 100% auto;
+  }
+  .section_team .bg_section{
+    background-size: calc(100% - 30px) auto;
+  }
+  
 }
 
-
-@media only screen and (max-width : 1366px) {
-
-}
-
-@media only screen and (max-width : 1279px) {
-
+@media only screen and (max-width : 1200px) {
+  
+  .title{
+    font-size: 90px;
+  }
+  
 }
 
 @media only screen and (max-width : 1023px) {

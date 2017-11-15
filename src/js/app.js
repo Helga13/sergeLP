@@ -5,6 +5,8 @@ $(document).ready(function () {
     scrollHorizontally: false
     , fixedElements: 'header'
     , scrollBar: true
+    , responsiveWidth: 768
+    , responsiveHeight: 768
 //    ,verticalCentered: false
     , onLeave: function (index, nextIndex) {
         if (nextIndex == 1) {
