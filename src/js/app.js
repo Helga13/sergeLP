@@ -56,6 +56,7 @@ $(document).ready(function () {
   
   $('.testimonials_slider').slick({
     dots: true
+    , arrows: false
     , slidesToShow: 2
     , slidesToScroll: 1
     , autoplay: true
@@ -66,7 +67,6 @@ $(document).ready(function () {
 //   steps_slider
   
   var swiper = new Swiper('.swiper-container', {
-//    direction: 'vertical',
     slidesPerView: 1,
     mousewheel: true,
     pagination: {
@@ -86,26 +86,29 @@ $(document).ready(function () {
   
   // popup
   
-  $('.burger_menu').click(function (e) {
-        e.preventDefault();
+  $('.burger_menu').click(function(e) {
+    e.preventDefault();
+  if($('.burger_menu').hasClass('opened')){
+    
+      
+      $('.popup_nav').fadeOut(100);
+      $('body').css('overflow', 'auto'); 
+      $('.burger_menu').removeClass('opened');
+	
+  }else{
+    $(this).toggleClass('opened');
         $('.popup_nav').fadeIn(300);
         $('body').css('overflow', 'hidden');   
-    });
-//    $('.popup_nav a').click(function (e) {
-//        e = event || window.event
-//        if (e.target == this) {
-//            $(this).fadeOut(100);
-//            $('body').css('overflow', 'auto'); 
-//        }
-//    });
-	$('.popup_close, .popup_nav a').click(function (e) {
+    }
+  });
+  
+  	$('.popup_close, .popup_nav a').click(function (e) {
          e.preventDefault();
            $('.popup_nav').fadeOut(100);
            $('body').css('overflow', 'auto'); 
+      $('.burger_menu').removeClass('opened');
     });
-//    $('.popup_content').click(function(e) {
-//		e.stopPropagation();
-//	});
+    
   
   $('.js-popup').click(function (e) {
         e.preventDefault();

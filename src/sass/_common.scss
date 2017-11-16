@@ -200,7 +200,7 @@ textarea{
 
 .select2-container--default .select2-selection--single{
   border: none;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .select2-container .select2-selection--single{
@@ -288,6 +288,7 @@ textarea{
         overflow-y: auto;
         height: 100%;
         position: relative;
+        padding-right: 8px;
       }
       .subtitle{
         font-size: 22px;
@@ -372,10 +373,6 @@ header{
 
 /* main_menu */
 
-.main_nav{
-  
-}
-
 .burger_menu{
   color: #fff;
   font-size: 18px;
@@ -409,6 +406,20 @@ header{
     .burger span{
       background-color: #3f254b; 
     }
+  }
+}
+
+.burger_menu.opened{
+  span:nth-child(2){
+    display: none;
+  }
+  span:nth-child(1){
+    transform: rotate(45deg);
+    top: 9px;
+    position: relative;
+  }
+  span:nth-child(3){
+    transform: rotate(-45deg);
   }
 }
 
@@ -476,6 +487,26 @@ header{
   }
 }
 
+.mobile_block{
+  display: none;
+  border-top: 1px solid #cfc1d5;
+  padding-top: 20px;
+  text-align: center;
+  .info_item{
+    line-height: 20px;
+    padding: 6px 0;
+    text-align: left;
+    img{
+      margin-right: 10px;
+      position: relative;
+      top: 2px;
+    }
+  }
+  .btn{
+    margin-top: 8px;
+  }
+}
+
 .fp-viewing-1 .popup_nav .to_advantages{
   color: #749101;
 }
@@ -501,9 +532,7 @@ header{
 
 .fp-section.fp-table .fp-tableCell{
   padding-top: 49px;
-//  padding-top: 169px;
 }
-
 
 .title{
   font-size: 100px;
@@ -594,6 +623,7 @@ header{
   }
   img{
     width: 28.84%;
+    min-width: 68px;
   }
   .caption{
     font-size: 16px;
@@ -661,7 +691,9 @@ header{
     letter-spacing: 0.025em;
     clear: both;
   }
-  .slick-dots li button:before{
+  .slick-dots li button:before,
+  .slick-prev,
+  .slick-next{
     display: none;
   }
   .slick-dots{
@@ -861,6 +893,13 @@ header{
     height: 140px;
     box-shadow: 0px 1px 5px 0px rgba(34, 34, 34, 0.3);
     margin-bottom: 9%;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+    img{
+      width: 100%;
+    }
   }
   .name{
     font-size: 16px;

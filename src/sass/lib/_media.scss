@@ -6,30 +6,350 @@
   .section_team .bg_section{
     background-size: calc(100% - 30px) auto;
   }
+  .popup_nav .popup_close{
+    top: 8%;
+  }
   
 }
 
 @media only screen and (max-width : 1200px) {
   
   .title{
-    font-size: 90px;
+    font-size: 80px;
   }
   
 }
 
-@media only screen and (max-width : 1023px) {
-
-}
-
 @media only screen and (max-width : 992px) {
+  
+  header .logo{
+    margin-left: 10px;
+    padding: 10px 0;
+  }
+  header .info_block{
+    margin-right: 10px;
+  }
+  .popup_nav .popup_close{
+    top: 40px;
+    right: 40px;
+  }
+  .popup_nav .title{
+    font-size: 70px;
+  }
+  .popup_nav ul a{
+    font-size: 40px;
+    line-height: 58px;
+  }
+  .section_steps table{
+    width: calc(100% - 8px);
+  }
+  .section_steps .info_block{
+    float: none;
+    width: calc(100% - 8px);
+    padding-top: 21px;
+  }
+  .section_steps .swiper-pagination{
+    bottom: 4%;
+  }
+  .section_steps .swiper-pagination-bullet{
+    width: 29px;
+    height: 29px;
+    line-height: 29px;
+    font-size: 18px;
+    &:before{
+      width: 55px;
+      height: 55px;
+    }
+    &:after{
+      width: 29px;
+      height: 29px;
+    }
+  }
+  .section_team .item{
+    width: 100%;
+    .img{
+      width: 70px;
+      height: 70px;
+    }
+    .mail {
+      padding-top: 17px;
+    }
+  }
+  .section_advantages .advantage_item{
+    width: 50%;
+  }
+  .title {
+    font-size: 60px;
+  }
+  form .field{
+    width: 100%;
+  }
+  input, select, textarea{
+    padding: 2.5px 15px;
+  }
+  .select2{
+    padding: 1px 15px;
+  }
+  .select2-container--default .select2-selection--single{
+    padding: 0;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: -2px;
+  }
+  .section_steps{
+    .steps_slider{
+//      margin-left: 0;
+    }
+    p{
+      line-height: 22px;
+    }
+  }
+  .section_advantages,
+  .section_testimonials,
+  .section_steps,
+  .section_team,
+  .section_form{
+//    padding-right: 10px;
+  }
+  .section_steps .slide_heading{
+    font-size: 18px;
+  }
 
+  
+  
 }
 
 @media only screen and (max-width : 767px) {
 
+  .section_franchise .open{
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .section_franchise .franchise{
+    font-size: 100px;
+    line-height: 120px;
+  }
+  .section_franchise .serge{
+    font-size: 60px;
+    line-height: 80px;
+  }
+  header .logo{
+    padding: 0;
+  }
+  header{
+    padding-top: 8px;
+  }
+  .mobile_block{
+    display: block;
+  }
+  header .info_block{
+    display: none;
+  }
+  .burger_menu{
+    font-size: 0;
+    left: auto;
+    right: 10px;
+    top: 10px;
+    z-index: 12;
+  }
+  .burger_menu.other .burger span{
+    background-color: #6f8b01;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .section_steps .steps_slider li{
+    padding-right: 8px;
+  }
+  .popup_nav .title {
+    font-size: 54px;
+  }
+  .popup_nav ul a {
+    font-size: 34px;
+    line-height: 54px;
+  }
+   
+}
+
+@media only screen and (max-width : 600px) {
+  
+  .section_franchise .open{
+    font-size: 31px;
+  }
+  .section_franchise .franchise{
+    font-size: 74px;
+    line-height: 100px;
+  }
+  .section_franchise .serge{
+    font-size: 50px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .testimonials_slider{
+    margin-right: 0;
+  }
+  .popup_nav{
+    top: 48px;
+  }
+  .popup_nav .popup_close{
+    display: none;
+  }
+  .popup_nav .popup_content{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+  .popup_nav .title {
+    font-size: 40px;
+  }
+  .popup_nav ul {
+    padding: 2.5% 0;
+  }
+  .popup_nav ul a {
+    font-size: 17px;
+    line-height: 34px;
+  }
+  .btn {
+    font-size: 14px;
+    width: 180px;
+    padding: 13px 0 11px;
+  }
+
 }
 
 @media only screen and (max-width : 480px) {
+  
+  .fp-tableCell{
+//    vertical-align: top;
+  }
+  
+//  .section_advantages,
+//  .section_testimonials,
+//  .section_steps,
+//  .section_team,
+//  .section_form{
+//    .title,
+//    .subtitle{
+//      margin-left: -39.741%;
+//      text-align: center;
+//    }
+//  }
+//  .section_advantages .bg_section{
+//    top: 200px;
+//  }
+  
+  .section_advantages,
+  .section_testimonials,
+  .section_steps,
+  .section_team,
+  .section_form{
+    padding-left: 10px;
+    padding-right: 10px;
+    .bg_section{
+      display: none;
+    }
+  } 
+  
+  .section_franchise .open{
+    font-size: 17px;
+    line-height: 46px;
+  }
+  .section_franchise .franchise{
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .section_franchise .serge{
+    font-size: 30px;
+    line-height: 52px;
+  }
+  .section_franchise .anchor{
+    width: 38px;
+    height: 38px;
+    border-width: 1px;
+    &:after{
+      left: 13px;
+      top: 16px;
+    }
+  }
+  .subtitle {
+    font-size: 17px;
+  }
+  .section_advantages .advantage_item{
+    padding-right: 10px;
+    &:nth-child(2n+1){
+      padding-right: 0;
+      padding-left: 10px;
+    }
+  }
+  .testimonials_slider .slick-dots{
+    text-align: center;
+  }
+  .section_testimonials .btn{
+    position: static;
+    margin: 57px auto 0;
+    display: block;
+  }
+  .section_steps .swiper-pagination{
+    left: 0;
+    right: 0;
+    position: static;
+    padding: 40px 13px;
+  }
+//  .testimonials_slider .img{
+//    width: 70px;
+//    height: 70px;
+//    float: none;
+//    img{
+//      width: 100%;
+//    }
+//  }
+  .testimonials_slider .text{
+    font-size: 14px;
+  }
+  .testimonials_slider .name,
+  .testimonials_slider .state{
+    font-size: 13px;
+  }
+  .section_steps .steps_slider li,
+  .link,
+  .section_steps p{
+    font-size: 14px;
+  }
+  .section_steps .steps_slider .btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-top: 7%;
+  }
+  .section_team .name{
+    font-size: 14px;
+  }
+  .select2, input, select, textarea{
+    font-size: 16px;
+  }
+  input, select, textarea {
+    padding: 6px 15px;
+  }
+  .popup.overlay .popup_close{
+    top: 15px;
+    right: 15px;
+  }
+  form .btn{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .title {
+    font-size: 36px;
+  }
+
+
 
 }
 
