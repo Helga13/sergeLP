@@ -104,11 +104,11 @@ $(document).ready(function () {
   $('.testimonials_slider').slick({
     dots: true
     , arrows: false
-    , slidesToShow: 2
+    , slidesToShow: 1
     , slidesToScroll: 1
     , autoplay: true
     , autoplaySpeed: 8000
-    , variableWidth: true
+//    , variableWidth: true
   });
   
 //   steps_slider

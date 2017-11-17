@@ -70,6 +70,10 @@
     .img{
       width: 70px;
       height: 70px;
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      float: left;
     }
     .mail {
       padding-top: 17px;
@@ -168,6 +172,15 @@
     font-size: 34px;
     line-height: 54px;
   }
+  .testimonials_slider .item_inner{
+    padding: 20px;
+  }
+  .section_testimonials .btn{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    float: right;
+  }
    
 }
 
@@ -190,7 +203,7 @@
     font-size: 24px;
   }
   .testimonials_slider{
-    margin-right: 0;
+    margin: 0 -10px;
   }
   .popup_nav{
     top: 48px;
@@ -222,25 +235,6 @@
 }
 
 @media only screen and (max-width : 480px) {
-  
-  .fp-tableCell{
-//    vertical-align: top;
-  }
-  
-//  .section_advantages,
-//  .section_testimonials,
-//  .section_steps,
-//  .section_team,
-//  .section_form{
-//    .title,
-//    .subtitle{
-//      margin-left: -39.741%;
-//      text-align: center;
-//    }
-//  }
-//  .section_advantages .bg_section{
-//    top: 200px;
-//  }
   
   .section_advantages,
   .section_testimonials,
@@ -287,11 +281,14 @@
   }
   .testimonials_slider .slick-dots{
     text-align: center;
+    li{
+      margin: 0 10px;
+    }
   }
   .section_testimonials .btn{
-    position: static;
     margin: 57px auto 0;
     display: block;
+    float: none;
   }
   .section_steps .swiper-pagination{
     left: 0;
@@ -299,14 +296,6 @@
     position: static;
     padding: 40px 13px;
   }
-//  .testimonials_slider .img{
-//    width: 70px;
-//    height: 70px;
-//    float: none;
-//    img{
-//      width: 100%;
-//    }
-//  }
   .testimonials_slider .text{
     font-size: 14px;
   }
