@@ -454,9 +454,9 @@ header{
       &:hover{
         color: #333;
       }
-      &:first-child{
-        border-bottom: 1px solid #42264e;
-      }
+//      &:last-child{
+//        border-top: 1px solid #42264e;
+//      }
     }
   }
   .tooltip {
