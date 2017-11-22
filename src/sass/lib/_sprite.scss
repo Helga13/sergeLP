@@ -18,9 +18,20 @@ $icom_phone-offset-y: -28px
 $icom_phone-width: 16px
 $icom_phone-height: 16px
 $icom_phone-total-width: 85px
-$icom_phone-total-height: 47px
+$icom_phone-total-height: 63px
 $icom_phone-image: 'sprite.png'
-$icom_phone: 57px 28px -57px -28px 16px 16px 85px 47px 'sprite.png' 'icom_phone'
+$icom_phone: 57px 28px -57px -28px 16px 16px 85px 63px 'sprite.png' 'icom_phone'
+$icon_bag-name: 'icon_bag'
+$icon_bag-x: 16px
+$icon_bag-y: 47px
+$icon_bag-offset-x: -16px
+$icon_bag-offset-y: -47px
+$icon_bag-width: 14px
+$icon_bag-height: 16px
+$icon_bag-total-width: 85px
+$icon_bag-total-height: 63px
+$icon_bag-image: 'sprite.png'
+$icon_bag: 16px 47px -16px -47px 14px 16px 85px 63px 'sprite.png' 'icon_bag'
 $icon_close-white-name: 'icon_close-white'
 $icon_close-white-x: 29px
 $icon_close-white-y: 0px
@@ -29,9 +40,9 @@ $icon_close-white-offset-y: 0px
 $icon_close-white-width: 28px
 $icon_close-white-height: 28px
 $icon_close-white-total-width: 85px
-$icon_close-white-total-height: 47px
+$icon_close-white-total-height: 63px
 $icon_close-white-image: 'sprite.png'
-$icon_close-white: 29px 0px -29px 0px 28px 28px 85px 47px 'sprite.png' 'icon_close-white'
+$icon_close-white: 29px 0px -29px 0px 28px 28px 85px 63px 'sprite.png' 'icon_close-white'
 $icon_close-name: 'icon_close'
 $icon_close-x: 57px
 $icon_close-y: 0px
@@ -40,20 +51,31 @@ $icon_close-offset-y: 0px
 $icon_close-width: 28px
 $icon_close-height: 28px
 $icon_close-total-width: 85px
-$icon_close-total-height: 47px
+$icon_close-total-height: 63px
 $icon_close-image: 'sprite.png'
-$icon_close: 57px 0px -57px 0px 28px 28px 85px 47px 'sprite.png' 'icon_close'
+$icon_close: 57px 0px -57px 0px 28px 28px 85px 63px 'sprite.png' 'icon_close'
 $icon_mail-name: 'icon_mail'
-$icon_mail-x: 29px
-$icon_mail-y: 28px
-$icon_mail-offset-x: -29px
-$icon_mail-offset-y: -28px
+$icon_mail-x: 30px
+$icon_mail-y: 47px
+$icon_mail-offset-x: -30px
+$icon_mail-offset-y: -47px
 $icon_mail-width: 16px
 $icon_mail-height: 14px
 $icon_mail-total-width: 85px
-$icon_mail-total-height: 47px
+$icon_mail-total-height: 63px
 $icon_mail-image: 'sprite.png'
-$icon_mail: 29px 28px -29px -28px 16px 14px 85px 47px 'sprite.png' 'icon_mail'
+$icon_mail: 30px 47px -30px -47px 16px 14px 85px 63px 'sprite.png' 'icon_mail'
+$icon_phone_dropdown-name: 'icon_phone_dropdown'
+$icon_phone_dropdown-x: 29px
+$icon_phone_dropdown-y: 28px
+$icon_phone_dropdown-offset-x: -29px
+$icon_phone_dropdown-offset-y: -28px
+$icon_phone_dropdown-width: 16px
+$icon_phone_dropdown-height: 16px
+$icon_phone_dropdown-total-width: 85px
+$icon_phone_dropdown-total-height: 63px
+$icon_phone_dropdown-image: 'sprite.png'
+$icon_phone_dropdown: 29px 28px -29px -28px 16px 16px 85px 63px 'sprite.png' 'icon_phone_dropdown'
 $icon_right-name: 'icon_right'
 $icon_right-x: 0px
 $icon_right-y: 0px
@@ -62,14 +84,25 @@ $icon_right-offset-y: 0px
 $icon_right-width: 29px
 $icon_right-height: 47px
 $icon_right-total-width: 85px
-$icon_right-total-height: 47px
+$icon_right-total-height: 63px
 $icon_right-image: 'sprite.png'
-$icon_right: 0px 0px 0px 0px 29px 47px 85px 47px 'sprite.png' 'icon_right'
+$icon_right: 0px 0px 0px 0px 29px 47px 85px 63px 'sprite.png' 'icon_right'
+$icon_world-name: 'icon_world'
+$icon_world-x: 0px
+$icon_world-y: 47px
+$icon_world-offset-x: 0px
+$icon_world-offset-y: -47px
+$icon_world-width: 16px
+$icon_world-height: 16px
+$icon_world-total-width: 85px
+$icon_world-total-height: 63px
+$icon_world-image: 'sprite.png'
+$icon_world: 0px 47px 0px -47px 16px 16px 85px 63px 'sprite.png' 'icon_world'
 $spritesheet-width: 85px
-$spritesheet-height: 47px
+$spritesheet-height: 63px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $icom_phone $icon_close-white $icon_close $icon_mail $icon_right
-$spritesheet: 85px 47px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $icom_phone $icon_bag $icon_close-white $icon_close $icon_mail $icon_phone_dropdown $icon_right $icon_world
+$spritesheet: 85px 63px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables

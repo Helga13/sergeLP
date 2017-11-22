@@ -17,6 +17,9 @@
   .title{
     font-size: 80px;
   }
+  .section_gallery .bg_section{
+    background-size: calc(100% - 30px) auto;
+  }
   
 }
 
@@ -118,7 +121,19 @@
   .section_steps .slide_heading{
     font-size: 18px;
   }
-
+  .tabs_caption .tab{
+    font-size: 20px;
+    &:first-child{
+      margin-right: 14px;
+    }  
+  }
+  .tabs_content{
+    margin: 0 -7px;
+    padding-bottom: 7px;
+  }
+  .section_gallery .item{
+    padding: 7px;
+  }
   
   
 }
@@ -181,6 +196,18 @@
     right: 0;
     float: right;
   }
+  .tabs_caption .tab{
+    font-size: 16px;
+    &:first-child{
+      margin-right: 10px;
+    }  
+  }
+  .tabs_content{
+    margin: 0 -5px;
+  }
+  .section_gallery .item{
+    padding: 5px;
+  }
    
 }
 
@@ -231,6 +258,17 @@
     width: 180px;
     padding: 13px 0 11px;
   }
+  .section_gallery .item{
+    width: 50%;
+  }
+  
+  .mobile_block .item{
+    width: 100%;
+    padding-bottom: 14px;
+  }
+  .mobile_block .info_item{
+    padding: 2px 0;
+  }
 
 }
 
@@ -240,7 +278,8 @@
   .section_testimonials,
   .section_steps,
   .section_team,
-  .section_form{
+  .section_form,
+  .section_gallery{
     padding-left: 10px;
     padding-right: 10px;
     .bg_section{

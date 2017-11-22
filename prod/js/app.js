@@ -24,7 +24,7 @@ $(document).ready(function () {
   
   $('.anchor_application').on('click', function (e) {
     e.preventDefault();
-    $.fn.fullpage.moveTo(6);
+    $.fn.fullpage.moveTo(7);
   });
   
   $('.to_advantages').on('click', function (e) {
@@ -42,15 +42,22 @@ $(document).ready(function () {
     $.fn.fullpage.moveTo(4);
   });
   
-  $('.to_team').on('click', function (e) {
+  $('.to_gallery').on('click', function (e) {
     e.preventDefault();
     $.fn.fullpage.moveTo(5);
   });
   
-  $('.to_form').on('click', function (e) {
+  $('.to_team').on('click', function (e) {
     e.preventDefault();
     $.fn.fullpage.moveTo(6);
   });
+  
+  $('.to_form').on('click', function (e) {
+    e.preventDefault();
+    $.fn.fullpage.moveTo(7);
+  });
+  
+  
   
   //testimonials slider
   
@@ -68,7 +75,7 @@ $(document).ready(function () {
   
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
-    mousewheel: true,
+//    mousewheel: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -143,12 +150,20 @@ $(document).ready(function () {
     $('.popup .btn').text('Оставить заявку');
   });
   
-  
-  
   // custom scroll
   
   $('.popup.overlay.text .popup_content .content').perfectScrollbar();
   
+  // tabs
+  $('.tabs_block').each(function () {
+    $(this).find('.tab').each(function (i) {
+      $(this).on('click', function (e) {
+		e.preventDefault();	$(this).addClass('active').siblings().removeClass('active').closest('.tabs_block').find('.tabs_content').removeClass('active').eq(i).addClass('active')
+      });
+    });
+  });
+  
+
   
   
 })

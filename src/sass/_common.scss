@@ -233,6 +233,42 @@ textarea{
   background-color: #42264e;
 }
 
+/* tabs */
+
+.tabs_caption{
+  font-family: 'robotobold', $font-stack-helvetica;
+  font-weight: bold;
+  padding-top: 7.8%;
+  .tab{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 40px;
+    line-height: normal;
+    color: #749101;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    &:first-child{
+      margin-right: 40px;
+    }
+    &.active{
+      border-bottom-color: #749101;
+    }
+  }
+}
+
+.tabs_content{
+  display: none;
+  line-height: normal;
+  font-size: 0;
+  margin: 0 -15px;
+  padding-top: 10px;
+  &.active{
+    display: block;
+  }
+}
+
 /* popup */
 
 .popup.overlay{
@@ -352,22 +388,95 @@ header{
     color: #ddd;
     font-size: 0;
     margin-right: 6.519%;
-    padding: 3px 0;
   }
   .info_item{
     display: inline-block;
     font-size: 14px;
     line-height: 25px;
     letter-spacing: 0.025em;
-    margin-left: 3.566%;
-    &:first-child{
-      margin-right: 1.664%;
-    }
+    margin-left: 2.07%;
+    position: relative;
     img{
       margin-right: 9px;
       position: relative;
       top: 3px;
     }
+    a{
+      padding-top: 3px;
+      padding-bottom: 3px;
+      display: inline-block;
+      transition: color .3s ease;
+      &:hover{
+        color: #749101;
+        & + .tooltip{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .item_phone{
+    &:after{
+      content: '';
+      position: absolute;
+      border-top: 7px solid #749101;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      right: 0;
+      top: 11px;
+    }
+    & > a{
+      padding-right: 20px;
+    }
+    &:hover,
+    &:active,
+    &:focus{
+      .phone_dropdown{
+        max-height: 70px;
+      }
+    }
+  } 
+  .phone_dropdown{
+    position: absolute;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 201px;
+    top: 31px;
+    left: -20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+    a{
+      color: #333;
+      padding: 3px 20px;
+      width: 100%;
+      &:hover{
+        color: #333;
+      }
+      &:first-child{
+        border-bottom: 1px solid #42264e;
+      }
+    }
+  }
+  .tooltip {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    border-radius: 3px;
+    color: #333;
+    padding: 5px 10px;
+    z-index: 9;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: 30px;
+    left: 50px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    white-space: nowrap;
+    transition: opacity .3s ease;
   }
 }
 
@@ -492,10 +601,28 @@ header{
   border-top: 1px solid #cfc1d5;
   padding-top: 20px;
   text-align: center;
+  font-size: 0;
+  .item{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+  .heading{
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 10px;
+  }
   .info_item{
     line-height: 20px;
-    padding: 6px 0;
+    padding: 5px 0;
     text-align: left;
+    a{
+      font-size: 14px;
+      letter-spacing: 0.025em;
+    }
     img{
       margin-right: 10px;
       position: relative;
@@ -519,11 +646,15 @@ header{
   color: #749101;
 }
 
-.fp-viewing-4 .popup_nav .to_team{
+.fp-viewing-4 .popup_nav .to_gallery{
   color: #749101;
 }
 
-.fp-viewing-5 .popup_nav .to_form{
+.fp-viewing-5 .popup_nav .to_team{
+  color: #749101;
+}
+
+.fp-viewing-6 .popup_nav .to_form{
   color: #749101;
 }
 
@@ -935,5 +1066,30 @@ header{
   }
   form{
     margin-top: 4.7%; 
+  }
+}
+
+.section_gallery{
+  position: relative;
+  padding-left: 28.741%;
+  padding-right: 6.519%;
+  .bg_section{
+    width: 28.741%;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    bottom: 0;
+    background: url('../img/bg/gallery_bg.png') left bottom no-repeat;
+    background-size: auto calc(100% - 30px);
+  }
+  .item{
+    padding: 15px;
+    width: 33.333%;
+    display: inline-block;
+    vertical-align: top;
+    img{
+      width: 100%;
+      box-shadow: 0px 1px 5px 0px rgba(34, 34, 34, 0.3);
+    }
   }
 }
