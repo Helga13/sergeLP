@@ -155,20 +155,16 @@ $(document).ready(function () {
   $('.burger_menu').click(function(e) {
     e.preventDefault();
   if($('.burger_menu').hasClass('opened')){
-    
-      
       $('.popup_nav').fadeOut(100);
       $('body').css('overflow', 'auto'); 
       $('.burger_menu').removeClass('opened');
-	
   }else{
     $(this).toggleClass('opened');
         $('.popup_nav').fadeIn(300);
         $('body').css('overflow', 'hidden');   
     }
   });
-  
-  	$('.popup_close, .popup_nav a').click(function (e) {
+  	$('.popup_close, .popup_nav ul a').click(function (e) {
          e.preventDefault();
            $('.popup_nav').fadeOut(100);
            $('body').css('overflow', 'auto'); 

@@ -547,10 +547,10 @@ header{
   .popup_content{
     text-align: left;
     color: #fff;
-    max-width: 600px;
+    max-width: 620px;
     width: 100%;
     margin: 0 auto;
-    padding: 7% 0;
+    padding: 7% 10px;
   }
   .popup_close{
     position: absolute;
@@ -597,7 +597,6 @@ header{
 }
 
 .mobile_block{
-  display: none;
   border-top: 1px solid #cfc1d5;
   padding-top: 20px;
   text-align: center;
@@ -606,6 +605,19 @@ header{
     display: inline-block;
     vertical-align: top;
     width: 50%;
+    .btn{
+      display: none;
+      visibility: hidden;
+    }
+    &.sites{
+      float: left;
+      .title{
+        display: none;
+      }
+      img{
+        display: none;
+      }
+    }
   }
   .heading{
     font-size: 16px;

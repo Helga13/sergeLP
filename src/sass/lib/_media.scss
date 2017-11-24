@@ -272,6 +272,39 @@
   .mobile_block .info_item{
     padding: 2px 0;
   }
+  .mobile_block .item .btn{
+    display: block;
+    visibility: visible;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile_block .heading{
+    display: none;
+    visibility: hidden;
+  }
+  .mobile_block .item.sites{
+    border-top: 1px solid #cfc1d5;
+    padding-top: 7px;
+    margin-top: 16px;
+    .info_item{
+      padding: 4px 0;
+    }
+  }
+  .mobile_block .item.sites img{
+    display: inline-block;
+  }
+  .mobile_block .item.sites a{
+    text-decoration: underline;
+  }
+  .mobile_block .item.sites .title{
+    display: block;
+    font-size: 17px;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    text-transform: inherit;
+    padding-top: 8px;
+  }
 
 }
 
